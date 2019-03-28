@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Shirt",
+    "price": 150,
+    "image": "img/product1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Socks",
+    "price": 50,
+    "image": "img/product2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Jacket",
+    "price": 350,
+    "image": "img/product3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Shoes",
+    "price": 250,
+    "image": "img/product4.jpg"
+  }
+]
