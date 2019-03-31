@@ -21,12 +21,12 @@
 
         xhr.onreadystatechange = () => {
           if(xhr.readyState === XMLHttpRequest.DONE) {
-            resolve(JSON.parse(xhr.responseText));
+            if(xhr.status === 200) {
+              resolve(JSON.parse(xhr.responseText));
+            } else {
+              reject(new Error("Network Error"));
+            }
           }
-        }
-
-        xhr.onerror = () => {
-          reject(new Error("Network Error"));
         }
       });
     }

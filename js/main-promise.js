@@ -6,12 +6,12 @@ function sendRequest(url) {
 
         xhr.onreadystatechange = () => {
             if(xhr.readyState === XMLHttpRequest.DONE) {
-            resolve(JSON.parse(xhr.responseText));
+            if(xhr.status === 200) {
+                resolve(JSON.parse(xhr.responseText));
+            } else {
+                reject();
             }
-        }
-
-        xhr.onerror = () => {
-            reject(new Error("Network Error"));
+            }
         }
     });
 }
@@ -45,16 +45,9 @@ class ItemsList {
 
     // получить каталог товаров
     fetchItems() {
-        sendRequest(`${API_URL}/products.json`)
+        return sendRequest(`${API_URL}/products.json`)
             .then(
-                items =>
-                    this.items = items.map(item => new Item(item.id, item.name, item.price, item.image)),
-                error => alert(`Rejected: ${error}`)
-            )
-            .then(
-                items => {
-                    document.querySelector('.goods').innerHTML = this.items.map(item => item.render()).join('')
-                }
+                items => this.items = items.map(item => new Item(item.id, item.name, item.price, item.image))
             );
     }
 
@@ -135,8 +128,8 @@ class Cart {
 
 // main script
 const items = new ItemsList();
-items.fetchItems();
-
-document.querySelector('.goods').innerHTML = items.render();
+items.fetchItems().then(() => {
+    document.querySelector('.goods').innerHTML = items.render();
+});
 
 console.log(`Сумма каталога: ${items.total()} рублей`);
