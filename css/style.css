@@ -71,7 +71,7 @@ body {
   display: flex;
   top: 35px;
 }
-.textbox {
+.textbox, .search-text {
   width: 280px;
   height: 36px;
   border: 1px solid #e6e6e6;
@@ -83,7 +83,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.35px;
 }
-.submit {
+.submit, .search-button {
   height: 38px;
   width: 38px;
   border: 1px solid #d9dee1;
