@@ -2,386 +2,398 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Shop</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-   <header class="header">
-        <div class="container header-flex">
-            <div class="header-left">
-                <a href="index.html" class="logo"><img class="logo-img" src="img/logo.png" alt="logo"> BRAN<span class="logo-d">D</span></a>
-                <form class="header-form" action="">
-                    <div class="browse">
-                        <a class="browse-link" href="catalog.html">Browse &thinsp; &#x25BE;</a>
-                        <div class="drop-box">
-                            <div class="drop-flex">
-                                <h3 class="drop-heading">Women</h3>
-                                <ul class="drop-menu">
-                                    <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Blazers</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Denim</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Accessories</a></li>
-                                </ul>
-                                <br>
-                                <h3 class="drop-heading">Men</h3>
-                                <ul class="drop-menu">
-                                    <li><a class="drop-link" href="catalog.html">Tees/Tank tops</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Shirts/Polos</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Sweaters</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Sweatshirts/Hoodies</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Blazers</a></li>
-                                    <li><a class="drop-link" href="catalog.html">Jackets/vests</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <input class="search-text" type="text" placeholder="Search for Item...">
-                    <button class="search-button"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <div class="header-right">
-                <div class="cart-box">
-                    <img src="img/cart.svg" class="cart" alt="cart">
-                    <div class="drop-box">
-                        <div class="drop-box-cart-item">
-                            <img src="img/cart-item-1.jpg" alt="cart item">
-                            <div class="drop-box-cart-item-info">
-                                <p class="drop-box-cart-item-name">Rebox Zane</p>
-                                <p class="drop-box-cart-item-stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </p>
-                                <p class="drop-box-cart-item-price">1 x $250</p>
-                            </div>
-                            <a href="#"><i class="fa fa-times-circle drop-box-cart-item-del"></i></a>
-                        </div>
-                        <div class="drop-box-cart-item">
-                            <img src="img/cart-item-2.jpg" alt="cart item">
-                            <div class="drop-box-cart-item-info">
-                                <p class="drop-box-cart-item-name">Rebox Zane</p>
-                                <p class="drop-box-cart-item-stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </p>
-                                <p class="drop-box-cart-item-price">1 x $250</p>
-                            </div>
-                            <a href="#"><i class="fa fa-times-circle drop-box-cart-item-del"></i></a>
-                        </div>
-                        <div class="drop-box-cart-sum">
-                            <p>TOTAL</p>
-                            <p>$500.00</p>
-                        </div>
-                        <a class="drop-box-cart-button" href="checkout.html">Checkout</a>
-                        <a class="drop-box-cart-button" href="shopping-cart.html">Go to cart</a>
-                    </div>
-                    <p class="cart-items-count">2</p>
+  <div id="app">
+    <header class="header">
+      <div class="container header-flex">
+        <div class="header-left">
+          <a href="index.html" class="logo"><img class="logo-img" src="img/logo.png" alt="logo"> BRAN<span
+              class="logo-d">D</span></a>
+          <form class="header-form" action="">
+            <div class="browse">
+              <a class="browse-link" href="catalog.html">Browse &thinsp; &#x25BE;</a>
+              <div class="drop-box">
+                <div class="drop-flex">
+                  <h3 class="drop-heading">Women</h3>
+                  <ul class="drop-menu">
+                    <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                    <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                    <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                    <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                    <li><a class="drop-link" href="catalog.html">Blazers</a></li>
+                    <li><a class="drop-link" href="catalog.html">Denim</a></li>
+                    <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
+                    <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
+                    <li><a class="drop-link" href="catalog.html">Accessories</a></li>
+                  </ul>
+                  <br>
+                  <h3 class="drop-heading">Men</h3>
+                  <ul class="drop-menu">
+                    <li><a class="drop-link" href="catalog.html">Tees/Tank tops</a></li>
+                    <li><a class="drop-link" href="catalog.html">Shirts/Polos</a></li>
+                    <li><a class="drop-link" href="catalog.html">Sweaters</a></li>
+                    <li><a class="drop-link" href="catalog.html">Sweatshirts/Hoodies</a></li>
+                    <li><a class="drop-link" href="catalog.html">Blazers</a></li>
+                    <li><a class="drop-link" href="catalog.html">Jackets/vests</a></li>
+                  </ul>
                 </div>
-                <a href="#" class="button">My Account &thinsp; &#x25BE;</a>
+              </div>
             </div>
+            <input class="search-text" type="text" v-model="searchQuery" placeholder="Search for Item...">
+            <button class="search-button" @click="handleSearchClick"><i class="fa fa-search"></i></button>
+          </form>
         </div>
+        <div class="header-right">
+          <div class="cart-box" @click="handleCartClick">
+            <img src="img/cart.svg" class="cart" alt="cart">
+            <div class="drop-box-cart" v-if="isVisibleCart">
+              <div class="drop-box-cart-item">
+                <img src="img/cart-item-1.jpg" alt="cart item">
+                <div class="drop-box-cart-item-info">
+                  <p class="drop-box-cart-item-name">Rebox Zane</p>
+                  <p class="drop-box-cart-item-stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </p>
+                  <p class="drop-box-cart-item-price">1 x $250</p>
+                </div>
+                <a href="#"><i class="fa fa-times-circle drop-box-cart-item-del"></i></a>
+              </div>
+              <div class="drop-box-cart-item">
+                <img src="img/cart-item-2.jpg" alt="cart item">
+                <div class="drop-box-cart-item-info">
+                  <p class="drop-box-cart-item-name">Rebox Zane</p>
+                  <p class="drop-box-cart-item-stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </p>
+                  <p class="drop-box-cart-item-price">1 x $250</p>
+                </div>
+                <a href="#"><i class="fa fa-times-circle drop-box-cart-item-del"></i></a>
+              </div>
+              <div class="drop-box-cart-sum">
+                <p>TOTAL</p>
+                <p>$500.00</p>
+              </div>
+              <a class="drop-box-cart-button" href="checkout.html">Checkout</a>
+              <a class="drop-box-cart-button" href="shopping-cart.html">Go to cart</a>
+            </div>
+            <p class="cart-items-count">2</p>
+          </div>
+          <a href="#" class="button">My Account &thinsp; &#x25BE;</a>
+        </div>
+      </div>
     </header>
     <nav class="navigation">
-        <div class="container">
-            <ul class="menu">
-                <li class="menu-list"><a class="menu-link" href="index.html">Home</a></li>
-                <li class="menu-list">
-                    <a class="menu-link" href="catalog.html">Man</a>
-                    <div class="drop-box">
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                                <li><a class="drop-link" href="catalog.html">Blazers</a></li>
-                                <li><a class="drop-link" href="catalog.html">Denim</a></li>
-                                <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
-                                <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
-                                <li><a class="drop-link" href="catalog.html">Accessories</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <a class="drop-img-link" href="catalog.html">Super sale!</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="catalog.html">Women</a>
-                    <div class="drop-box">
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                                <li><a class="drop-link" href="catalog.html">Blazers</a></li>
-                                <li><a class="drop-link" href="catalog.html">Denim</a></li>
-                                <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
-                                <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
-                                <li><a class="drop-link" href="catalog.html">Accessories</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <a class="drop-img-link" href="catalog.html">Super sale!</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="catalog.html">Kids</a>
-                    <div class="drop-box drop-box-last">
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                                <li><a class="drop-link" href="catalog.html">Blazers</a></li>
-                                <li><a class="drop-link" href="catalog.html">Denim</a></li>
-                                <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
-                                <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
-                                <li><a class="drop-link" href="catalog.html">Accessories</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <a class="drop-img-link" href="catalog.html">Super sale!</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="catalog.html">Accoseriese</a>
-                    <div class="drop-box drop-box-last">
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                                <li><a class="drop-link" href="catalog.html">Blazers</a></li>
-                                <li><a class="drop-link" href="catalog.html">Denim</a></li>
-                                <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
-                                <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
-                                <li><a class="drop-link" href="catalog.html">Accessories</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <a class="drop-img-link" href="catalog.html">Super sale!</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="catalog.html">Featured</a>
-                    <div class="drop-box drop-box-last">
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                                <li><a class="drop-link" href="catalog.html">Blazers</a></li>
-                                <li><a class="drop-link" href="catalog.html">Denim</a></li>
-                                <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
-                                <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
-                                <li><a class="drop-link" href="catalog.html">Accessories</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <a class="drop-img-link" href="catalog.html">Super sale!</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="catalog.html">Hot Deals</a>
-                    <div class="drop-box drop-box-last">
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                                <li><a class="drop-link" href="catalog.html">Blazers</a></li>
-                                <li><a class="drop-link" href="catalog.html">Denim</a></li>
-                                <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
-                                <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
-                                <li><a class="drop-link" href="catalog.html">Accessories</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop-flex">
-                            <h3 class="drop-heading">Women</h3>
-                            <ul class="drop-menu">
-                                <li><a class="drop-link" href="catalog.html">Dresses</a></li>
-                                <li><a class="drop-link" href="catalog.html">Tops</a></li>
-                                <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
-                                <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
-                            </ul>
-                            <br>
-                            <a class="drop-img-link" href="catalog.html">Super sale!</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="menu">
+          <li class="menu-list"><a class="menu-link" href="index.html">Home</a></li>
+          <li class="menu-list">
+            <a class="menu-link" href="catalog.html">Man</a>
+            <div class="drop-box">
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                  <li><a class="drop-link" href="catalog.html">Blazers</a></li>
+                  <li><a class="drop-link" href="catalog.html">Denim</a></li>
+                  <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
+                  <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
+                  <li><a class="drop-link" href="catalog.html">Accessories</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <a class="drop-img-link" href="catalog.html">Super sale!</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu-list">
+            <a class="menu-link" href="catalog.html">Women</a>
+            <div class="drop-box">
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                  <li><a class="drop-link" href="catalog.html">Blazers</a></li>
+                  <li><a class="drop-link" href="catalog.html">Denim</a></li>
+                  <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
+                  <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
+                  <li><a class="drop-link" href="catalog.html">Accessories</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <a class="drop-img-link" href="catalog.html">Super sale!</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu-list">
+            <a class="menu-link" href="catalog.html">Kids</a>
+            <div class="drop-box drop-box-last">
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                  <li><a class="drop-link" href="catalog.html">Blazers</a></li>
+                  <li><a class="drop-link" href="catalog.html">Denim</a></li>
+                  <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
+                  <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
+                  <li><a class="drop-link" href="catalog.html">Accessories</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <a class="drop-img-link" href="catalog.html">Super sale!</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu-list">
+            <a class="menu-link" href="catalog.html">Accoseriese</a>
+            <div class="drop-box drop-box-last">
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                  <li><a class="drop-link" href="catalog.html">Blazers</a></li>
+                  <li><a class="drop-link" href="catalog.html">Denim</a></li>
+                  <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
+                  <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
+                  <li><a class="drop-link" href="catalog.html">Accessories</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <a class="drop-img-link" href="catalog.html">Super sale!</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu-list">
+            <a class="menu-link" href="catalog.html">Featured</a>
+            <div class="drop-box drop-box-last">
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                  <li><a class="drop-link" href="catalog.html">Blazers</a></li>
+                  <li><a class="drop-link" href="catalog.html">Denim</a></li>
+                  <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
+                  <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
+                  <li><a class="drop-link" href="catalog.html">Accessories</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <a class="drop-img-link" href="catalog.html">Super sale!</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu-list">
+            <a class="menu-link" href="catalog.html">Hot Deals</a>
+            <div class="drop-box drop-box-last">
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                  <li><a class="drop-link" href="catalog.html">Blazers</a></li>
+                  <li><a class="drop-link" href="catalog.html">Denim</a></li>
+                  <li><a class="drop-link" href="catalog.html">Leggings/Pants</a></li>
+                  <li><a class="drop-link" href="catalog.html">Skirts/Shorts</a></li>
+                  <li><a class="drop-link" href="catalog.html">Accessories</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                </ul>
+              </div>
+              <div class="drop-flex">
+                <h3 class="drop-heading">Women</h3>
+                <ul class="drop-menu">
+                  <li><a class="drop-link" href="catalog.html">Dresses</a></li>
+                  <li><a class="drop-link" href="catalog.html">Tops</a></li>
+                  <li><a class="drop-link" href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a class="drop-link" href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <br>
+                <a class="drop-img-link" href="catalog.html">Super sale!</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
     <main class="container">
-        <div class="goods"></div>
+      <div class="goods">
+        <h2 v-if="filteredItems.length == 0">Нет данных</h2>
+        <div v-for="item in filteredItems" class="products-item">
+          <img :src="item.image" class="product-image" alt="product image">
+          <h2>{{item.name}}</h2>
+          <span>{{item.price}}</span>
+        </div>
+      </div>
     </main>
-    <script src="js/main-search.js"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+  <script src="js/main-vue.js"></script>
 </body>
 
 </html>
