@@ -93,7 +93,7 @@ body {
   outline: 0;
   transition: all 0.3s ease;
 }
-.submit:hover {
+.submit:hover, .search-button:hover {
   background-color: #f16d7f;
   color: #f7f7f8;
 }
@@ -133,11 +133,11 @@ body {
 .cart-box {
   position: relative;
 }
-.cart-box:hover .drop-box {
+/* .cart-box:hover .drop-box-cart {
   display: block;
   top: 40px;
   left: -20px;
-}
+} */
 .drop-box-cart-item {
   display: flex;
   justify-content: space-between;
@@ -221,7 +221,7 @@ body {
   height: 438px;
   margin-bottom: 119px;
 }
-.subcribe-left-text {
+.subscribe-left-text {
   color: #222224;
   font-size: 16px;
   font-style: italic;
@@ -229,14 +229,14 @@ body {
   line-height: 26px;
   margin: 6px 72px 11px 109px;
 }
-.subcribe-left-autor {
+.subscribe-left-autor {
   color: #f16d7f;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.4px;
   margin-left: 112px;
 }
-.subcribe-left-from {
+.subscribe-left-from {
   color: #222224;
   font-size: 12px;
   font-weight: 300;
@@ -435,7 +435,7 @@ body {
   justify-content: center;
   list-style-type: none;
 }
-.drop-box {
+.drop-box, .drop-box-cart {
   border: 1px solid #ececec;
   border-radius: 5px;
   background-color: #ffffff;
@@ -443,8 +443,10 @@ body {
   top: 50px;
   left: -10px;
   padding: 20px;
-  display: none;
   z-index: 1;
+}
+.drop-box {
+  display: none;
 }
 .menu-list {
   position: relative;
