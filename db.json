@@ -3,12 +3,16 @@
     {
       "id": 1,
       "phone": "4343543",
-      "name": "Vasya Pupkin"
+      "name": "Vasya Pupkin",
+      "username": "vasya",
+      "password": "123456"
     },
     {
       "id": 3,
       "phone": "4343543",
-      "name": "Vanya Pupkin"
+      "name": "Vanya Pupkin",
+      "username": "vanya",
+      "password": "123456"
     },
     {
       "name": "Ivan Ivanov",
@@ -47,5 +51,20 @@
       "image": "img/product4.jpg"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 1,
+      "name": "Shirt",
+      "price": 150,
+      "image": "img/product1.jpg",
+      "quantity": 4
+    },
+    {
+      "id": 4,
+      "name": "Shoes",
+      "price": 250,
+      "image": "img/product4.jpg",
+      "quantity": 3
+    }
+  ]
 }
