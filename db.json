@@ -57,14 +57,14 @@
       "name": "Shirt",
       "price": 150,
       "image": "img/product1.jpg",
-      "quantity": 4
+      "quantity": 1
     },
     {
-      "id": 4,
-      "name": "Shoes",
-      "price": 250,
-      "image": "img/product4.jpg",
-      "quantity": 3
+      "id": 2,
+      "name": "Socks",
+      "price": 50,
+      "image": "img/product2.jpg",
+      "quantity": 1
     }
   ]
 }
