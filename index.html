@@ -47,15 +47,15 @@
                 </div>
               </div>
             </div>
-            <search @onsearch="handleSearchClick"></search>
+            <search @search="handleSearchClick"></search>
           </form>
         </div>
         <div class="header-right">
           <div class="cart-box">
             <img src="img/cart.svg" class="cart" @click="handleCartClick" alt="cart">
-            <cart v-if="isVisibleCart" :newItem="newCartItem"></cart>
-            <p class="cart-items-count">2</p>
-            <!-- <p class="cart-items-count">{{ totalItems }}</p> -->
+            <cart v-if="isVisibleCart" :cart="cart" @delete="handleDeleteClick"></cart>
+            <!-- <p class="cart-items-count">2</p> -->
+            <p class="cart-items-count">{{ totalItems }}</p>
           </div>
           <a href="#" class="button">My Account &thinsp; &#x25BE;</a>
         </div>

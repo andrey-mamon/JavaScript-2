@@ -4,12 +4,12 @@ Vue.component('search', {
   template:`
     <div>
       <input class="search-text" type="text" v-model="searchQuery" placeholder="Search for Item..."><button
-       class="search-button" @click="handleSearchClick(searchQuery)"><i class="fa fa-search"></i></button>
+       class="search-button" @click="handleSearchClick"><i class="fa fa-search"></i></button>
     </div>
   `,
   methods: {
-    handleSearchClick(searchQuery) {
-      this.$emit('onsearch', searchQuery);
+    handleSearchClick() {
+      this.$emit('search', this.searchQuery);
     }
   },
   data() {
@@ -102,28 +102,16 @@ Vue.component('cart-item', {
   `,
   methods: {
     handleDeleteClick(item) {
-      this.$emit('ondelete', item);
+      this.$emit('delete', item);
     }
   }
 });
 
 Vue.component('cart', {
-  props: ['newItem'],
-  data() {
-    return {
-      cart: [],
-    };
-  },
-  mounted() {
-    fetch(`${API_URL}/cart`)
-      .then(response => response.json())
-      .then((items) => {
-        this.cart = items;
-      })
-  },
+  props: ['cart'],
   template:`
     <div class="drop-box-cart">
-      <cart-item v-for="entry in cartItems" :item="entry" @ondelete="handleDeleteClick"></cart-item>
+      <cart-item v-for="entry in cart" :item="entry" @delete="handleDeleteClick"></cart-item>
       <div class="drop-box-cart-sum">
         <p>TOTAL</p>
         <p>$ {{ total }}</p>
@@ -135,18 +123,41 @@ Vue.component('cart', {
   computed: {
     total() {
       return this.cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-    },
-    totalItems() {
-      return this.cart.reduce((acc, item) => acc + item.quantity, 0);
-    },
-    cartItems() {
-      if (this.newItem) {
-        addToCart(this.newItem);
-      }
-      return this.cart;
     }
   },
   methods: {
+    handleDeleteClick(item) {
+      this.$emit('delete', item);
+    }
+  }
+});
+
+const app = new Vue({
+  el: '#app',
+  data: {
+    filterValue: '',
+    cart: [],
+    isVisibleCart: false,
+  },
+  mounted() {
+    fetch(`${API_URL}/cart`)
+      .then(response => response.json())
+      .then((items) => {
+        this.cart = items;
+      });
+  },
+  computed: {
+    totalItems() {
+      return this.cart.reduce((acc, item) => acc + item.quantity, 0);
+    }
+  },
+  methods: {
+    handleSearchClick(searchQuery) {
+      this.filterValue = searchQuery;
+    },
+    handleCartClick() {
+      this.isVisibleCart = !this.isVisibleCart;
+    },
     handleDeleteClick(item) {
       if (item.quantity > 1) {
         fetch(`${API_URL}/cart/${item.id}`, {
@@ -170,7 +181,7 @@ Vue.component('cart', {
           });
       }
     },
-    addToCart(item) {
+    handleBuyClick(item) {
       const cartItem = this.cart.find((entry) => entry.id === item.id);
       if (cartItem) {
         // товар в корзине уже есть, нужно увеличить количество
@@ -203,23 +214,3 @@ Vue.component('cart', {
     }
   }
 });
-
-const app = new Vue({
-  el: '#app',
-  data: {
-    filterValue: '',
-    isVisibleCart: false,
-    newCartItem: {}
-  },
-  methods: {
-    handleSearchClick(searchQuery) {
-      this.filterValue = searchQuery;
-    },
-    handleCartClick() {
-      this.isVisibleCart = !this.isVisibleCart;
-    },
-    handleBuyClick(item) {
-      this.newCartItem = item;
-    }
-  }
-})
