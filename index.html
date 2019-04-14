@@ -47,36 +47,14 @@
                 </div>
               </div>
             </div>
-            <input class="search-text" type="text" v-model="searchQuery" placeholder="Search for Item...">
-            <button class="search-button" @click="handleSearchClick"><i class="fa fa-search"></i></button>
+            <search @search="handleSearchClick"></search>
           </form>
         </div>
         <div class="header-right">
           <div class="cart-box">
             <img src="img/cart.svg" class="cart" @click="handleCartClick" alt="cart">
-            <div class="drop-box-cart" v-if="isVisibleCart">
-              <div class="drop-box-cart-item" v-for="item in cart">
-                <img :src="item.image" width="72" height="85" alt="cart item">
-                <div class="drop-box-cart-item-info">
-                  <p class="drop-box-cart-item-name">{{ item.name }}</p>
-                  <p class="drop-box-cart-item-stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </p>
-                  <p class="drop-box-cart-item-price">{{ item.quantity }} x ${{ item.price }}</p>
-                </div>
-                <a href="#" @click="handleDeleteClick(item)"><i class="fa fa-times-circle drop-box-cart-item-del"></i></a>
-              </div>
-              <div class="drop-box-cart-sum">
-                <p>TOTAL</p>
-                <p>${{ total }}</p>
-              </div>
-              <a class="drop-box-cart-button" href="checkout.html">Checkout</a>
-              <a class="drop-box-cart-button" href="shopping-cart.html">Go to cart</a>
-            </div>
+            <cart v-if="isVisibleCart" :cart="cart" @delete="handleDeleteClick"></cart>
+            <!-- <p class="cart-items-count">2</p> -->
             <p class="cart-items-count">{{ totalItems }}</p>
           </div>
           <a href="#" class="button">My Account &thinsp; &#x25BE;</a>
@@ -367,28 +345,11 @@
       </div>
     </nav>
     <main class="container">
-      <div class="goods">
-        <h2 v-if="filteredItems.length == 0">Нет данных</h2>
-        <div v-for="item in filteredItems" class="products-item">
-            <a href="#" class="product">
-                <img :src="item.image" class="product-image" alt="product image">
-                <div class="product-text-box">
-                    <p class="product-name">{{item.name}}</p>
-                    <p class="product-price">${{item.price}}</p>
-                </div>
-            </a>
-            <div class="add-to-cart-box">
-                <a class="add-to-cart" href="#" @click.prevent="handleBuyClick(item)">
-                    <img src="img/cart-white.svg" class="cart-white" alt="cart">
-                    Add to Cart
-                </a>
-            </div>
-        </div>
-      </div>
+      <products :query="filterValue" @onbuy="handleBuyClick"></products>
     </main>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
-  <script src="js/main-vue.js"></script>
+  <script src="js/main-vue-comp.js"></script>
 </body>
 
 </html>
