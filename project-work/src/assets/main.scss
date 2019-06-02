@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.button {
+  padding-left: 19px;
+  padding-right: 19px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #f16d7f;
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.38px;
+  transition: box-shadow 0.3s ease;
+}
+.button:hover {
+  box-shadow: 0 5px 8px #f16d7f;
+}
+.button:active {
+  box-shadow: 0 2px 4px #f16d7f;
+}
